@@ -13,16 +13,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   let humanChoice = prompt("Make your choice: rock, paper, scissors");
-  // while (
-  //   humanChoice !== "rock" &&
-  //   humanChoice !== "paper" &&
-  //   humanChoice !== "scissors"
-  // ) {
-  //   humanChoice = prompt(
-  //     "You must choose either 'rock' 'paper' or 'scissors' (case-sensitve)"
-  //   );
-  // }
-  return humanChoice;
+  return humanChoice.toLowerCase();
 }
 
 let humanScore = 0;
