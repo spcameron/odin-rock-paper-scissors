@@ -13,17 +13,21 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   let humanChoice = prompt("Make your choice: rock, paper, scissors");
-  while (
-    humanChoice !== "rock" &&
-    humanChoice !== "paper" &&
-    humanChoice !== "scissors"
-  ) {
-    humanChoice = prompt(
-      "You must choose either 'rock' 'paper' or 'scissors' (case-sensitve)"
-    );
-  }
+  // while (
+  //   humanChoice !== "rock" &&
+  //   humanChoice !== "paper" &&
+  //   humanChoice !== "scissors"
+  // ) {
+  //   humanChoice = prompt(
+  //     "You must choose either 'rock' 'paper' or 'scissors' (case-sensitve)"
+  //   );
+  // }
   return humanChoice;
 }
+
+let humanScore = 0;
+let computerScore = 0;
+
 
 const log = console.log;
 // log("Hello World");
