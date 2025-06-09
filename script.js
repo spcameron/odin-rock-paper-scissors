@@ -1,3 +1,5 @@
+// GAME
+
 function getComputerChoice() {
   let computerChoice;
   const randomValue = Math.floor(Math.random() * 3) + 1;
@@ -82,3 +84,6 @@ function capitalizeFirstLetter(word) {
 }
 
 playGame();
+
+// UI
+
