@@ -1,73 +1,131 @@
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  /* footer support */
+  margin-bottom: 100px;
 }
 
-header {
-  padding: 15px;
-  
+button {
+  border: none;
+  border-radius: 10px;
+}
+
+/* header */
+
+.header {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.header div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
   display: flex;
   justify-content: center;
 }
 
-footer {
-  padding: 15px;
+/* main */
 
-  display: flex;
-  justify-content: center;
+.content {
+  margin: 80px;
+  text-align: center;
 }
 
 .container-main {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 50px;
+  margin: 40px auto;
 }
 
 .scoreboard {
-  padding: 15px;
+  margin-bottom: 10px;
 }
 
 .game-status {
-  padding: 20px 10px;
+  margin-bottom: 10px;
 
   text-align: center;
 }
 
 .score-cards {
+  max-width: 400px;
+  margin: 0 auto;
   padding: 10px;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .score-card {
-  width: 200px;
-  height: 80px;
+  width: 180px;
+  text-align: center;
+}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.sign {
+  font-size: 80px;
+  margin-bottom: 10px;
 }
 
 .score {
-  padding: 15px;
+  margin: 10px 0;
 }
 
 .buttons {
-  padding: 15px;
-
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .button-card > button {
-  width: 100px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #1f2937;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
   padding: 10px;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
