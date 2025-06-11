@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title></title>
     <link href="./styles.css" rel="stylesheet" />
-    <!-- <script src="./script.js" defer></script> -->
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -16,41 +16,46 @@
       <div class="container-main">
         <div class="scoreboard">
           <div class="game-status">
-            <h2>ROUND STATUS</h2>
-            <h3>ROUND DESCRIPTION</h3>
+            <p id="roundHeader" class="round-header">Click below to play!</p>
+            <p id="roundSubheader" class="round-subheader">First to five points wins</p>
           </div>
           <div class="score-cards">
             <div class="score-card">
-              <div id="playerSign" class="sign">IMG</div>
-              <div id="playerScore" class="score">PLAYER: 0</div>
+              <div id="humanSign" class="sign">?</div>
+              <div id="humanScore" class="score">PLAYER: 0</div>
             </div>
             <div class="score-card">
-              <div id="cpuSign" class="sign">IMG</div>
-              <div id="cpuScore" class="score">CPU: 0</div>
+              <div id="cpuSign" class="sign">?</div>
+              <div id="cpuScore" class="score">COMPUTER: 0</div>
             </div>
           </div>
         </div>
         <div class="buttons">
-          <div class="button-card">
-            <button>ROCK</button>
+          <div class="button-card rock">
+            <button id="rock" class="rps-button">✊</button>
           </div>
-          <div class="button-card">
-            <button>PAPER</button>
+          <div class="button-card paper">
+            <button id="paper" class="rps-button">✋</button>
           </div>
-          <div class="button-card">
-            <button>SCISSORS</button>
+          <div class="button-card scissors">
+            <button id="scissors" class="rps-button">✌</button>
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
       <div class="copyright">
-        Copyright &copy;
+        copyright &copy;
         <a href="https://github.com/spcameron/odin-rock-paper-scissors"
-          >Sean P. Cameron</a
+          >spcameron</a
         >
         2025
       </div>
     </footer>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMessage"></p>
+      <button class="btn-newgame" id="newGameButton">Play again</button>
+    </div>
+    <div class="overlay"></div>
   </body>
 </html>
